@@ -1,0 +1,57 @@
+.selectAuto {
+  padding: 4rem 0;
+  font-size: 1em;
+}
+.selectAuto h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.selectAuto__cars {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.selectAuto__car {
+  width: auto;
+
+  padding: 1.5rem;
+
+  color: #fff;
+
+  border-radius: 5px;
+  background: rgb(49, 236, 49);
+
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.selectAuto__car .img {
+  width: 100%;
+  height: auto;
+}
+.selectAuto__car .img img {
+  width: 100%;
+}
+.selectAuto__car h3 {
+  font-size: 1.5em;
+  margin-top: 1rem;
+}
+
+.selectAuto__car:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .selectAuto__cars {
+    justify-content: center;
+  }
+  .selectAuto__car {
+    min-width: calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+  }
+}

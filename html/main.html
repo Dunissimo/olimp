@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row">
+        <div class="header__logo">
+          <a href="./main.html">
+            <img src="/assets/logo-2.svg" alt="" />
+          </a>
+        </div>
+        <div class="header__nav">
+          <nav>
+            <a href="./cars.html">Выбор машины</a>
+          </nav>
+          <div class="header__sign">
+            <a href="./signIn.html">Вход</a>
+            <a href="./signUp.html">Регистрация</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Order -->
+      <section class="order">
+        <div class="container order__row">
+          <div class="left">
+            <h1>Не бери на себя слишком много. <b>Есть TrackBus!</b></h1>
+
+            <h2>Заказать авто</h2>
+            <form action="post" class="order__form">
+              <div class="field">
+                <input
+                  placeholder="Откуда"
+                  required
+                  type="text"
+                  name="from"
+                  id="order-from"
+                />
+              </div>
+              <div class="field">
+                <input
+                  placeholder="Куда"
+                  required
+                  type="text"
+                  name="to"
+                  id="order-to"
+                />
+              </div>
+              <div class="select-car">
+                <select class="select-css" name="cars" id="cars">
+                  <option value="merc">Mercedes-Benz Sprinter</option>
+                  <option value="vw">Volkswagen Caddy</option>
+                  <option value="lada">Lada Largus</option>
+                  <option value="renault">Renault Master</option>
+                  <option value="ford">Ford Transit</option>
+                  <option value="citroen">Citroen Berlingo</option>
+                </select>
+              </div>
+              <div class="field">
+                <input
+                  required
+                  placeholder="Номер телефона для связи"
+                  type="tel"
+                  name="order-tel"
+                  id="order-tel"
+                />
+              </div>
+
+              <button class="form-button" type="submit">Заказать</button>
+            </form>
+          </div>
+          <div class="right">
+            <img src="/assets/movingtruck-01.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Order -->
+
+      <!-- Why we -->
+      <section class="whyWe">
+        <div class="container">
+          <h2 class="whyWe__title">Почему TrackBus?</h2>
+          <div class="whyWe__features">
+            <div class="left">
+              <img src="/assets/movingtruck-01.svg" alt="" />
+            </div>
+            <div class="right">
+              <ul class="whyWe__features-list">
+                <li>
+                  <p>Подадим машину быстро</p>
+                  <p>Машина приедет в течение 15 минут после вызова</p>
+                </li>
+                <li>
+                  <p>Уговор дороже денег</p>
+                  <p>
+                    Цена известна сразу и не изменится во время выполнения заказ
+                  </p>
+                </li>
+                <li>
+                  <p>Безвыходных и обедов</p>
+                  <p>Переезжайте когда удобно - даже ночью или в праздники</p>
+                </li>
+                <li>
+                  <p>Страхование труда</p>
+                  <p>
+                    Покроем все риски, связанные с доставкой груза в вашу пользу
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why we -->
+
+      <!-- Questions -->
+      <section class="questions">
+        <div class="container">
+          <h2 class="questions__title">Часто задаваемые вопросы</h2>
+
+          <div class="accor">
+            <input type="radio" name="accor" id="accor1" checked="checked" />
+            <label for="accor1">Вопрос #1</label>
+            <div class="accor__body">
+              <p>
+                Задача организации, в особенности же новая модель
+                организационной деятельности играет важную роль в формировании
+                форм развития. Разнообразный и богатый опыт реализация
+                намеченных плановых заданий влечет за собой процесс внедрения и
+                модернизации модели развития. Идейные соображения высшего
+                порядка, а также начало повседневной работы по формированию
+                позиции способствует подготовки и реализации форм развития.
+              </p>
+            </div>
+
+            <input type="radio" name="accor" id="accor2" />
+            <label for="accor2">Вопрос #2</label>
+            <div class="accor__body">
+              <p>
+                Товарищи! сложившаяся структура организации требуют от нас
+                анализа дальнейших направлений развития. Не следует, однако
+                забывать, что консультация с широким активом влечет за собой
+                процесс внедрения и модернизации соответствующий условий
+                активизации. Товарищи! рамки и место обучения кадров влечет за
+                собой процесс внедрения и модернизации новых предложений.
+              </p>
+            </div>
+
+            <input type="radio" name="accor" id="accor3" />
+            <label for="accor3">Вопрос #3</label>
+            <div class="accor__body">
+              <p>
+                Разнообразный и богатый опыт дальнейшее развитие различных форм
+                деятельности обеспечивает широкому кругу (специалистов) участие
+                в формировании дальнейших направлений развития. Таким образом
+                сложившаяся структура организации представляет собой интересный
+                эксперимент проверки новых предложений.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Questions -->
+    </main>
+
+    <footer class="footer">
+      <div class="container row">
+        <p>&#169; Все права защищены. 2023</p>
+        <p>
+          Разработал
+          <a
+            href="https://github.com/Dunissimo"
+            target="_blank"
+            rel="no-referrer"
+            >Dunissimo</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/signUp.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row">
+        <div class="header__logo">
+          <a href="./main.html">
+            <img src="/assets/logo-2.svg" width="100%" height="100%" alt="" />
+          </a>
+        </div>
+        <div class="header__nav">
+          <nav>
+            <a href="./cars.html">Выбор машины</a>
+          </nav>
+          <div class="header__sign">
+            <a href="./signIn.html">Вход</a>
+            <a href="./signUp.html">Регистрация</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="signUp">
+        <div class="container">
+          <form action="post" class="signUp__form sign-form">
+            <div class="signUp__name label">
+              <label for="register-name">Имя</label>
+              <input
+                type="text"
+                required
+                placeholder="Введите ваше имя"
+                class="sign-input"
+                name="register-name"
+                id="register-name"
+              />
+            </div>
+            <div class="signUp__email label">
+              <label for="register-email">Почта</label>
+              <input
+                type="email"
+                required
+                placeholder="Введите вашу почту"
+                class="sign-input"
+                name="radio"
+                id="register-email"
+              />
+            </div>
+            <div class="signUp__person form-radio-group label">
+              <p class="signUp__p">Лицо</p>
+              <div class="form-radio-group-item">
+                <input
+                  type="radio"
+                  name="radio"
+                  value="Физическое"
+                  id="individual"
+                  checked
+                />
+                <label for="individual">Физическое</label>
+              </div>
+              <div class="form-radio-group-item">
+                <input
+                  type="radio"
+                  name="person"
+                  value="Юридическое"
+                  id="entity"
+                />
+                <label for="entity">Юридическое</label>
+              </div>
+            </div>
+            <div class="signUp__person label">
+              <label for="register-pass">Пароль</label>
+              <input
+                type="password"
+                required
+                placeholder="Введите ваш пароль"
+                class="sign-input"
+                name="register-pass"
+                id="register-pass"
+              />
+            </div>
+            <div class="signUp__person label">
+              <label for="register-pass">Подтвердите пароль</label>
+              <input
+                type="password"
+                required
+                placeholder="Подтвердите пароль"
+                class="sign-input"
+                name="register-pass"
+                id="register-pass"
+              />
+            </div>
+
+            <button class="form-button" type="submit">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container row">
+        <p>&#169; Все права защищены. 2023</p>
+        <p>
+          Разработал
+          <a
+            href="https://github.com/Dunissimo"
+            target="_blank"
+            rel="no-referrer"
+            >Dunissimo</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

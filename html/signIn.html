@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sigIn.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row">
+        <div class="header__logo">
+          <a href="./main.html">
+            <img src="/assets/logo-2.svg" alt="" />
+          </a>
+        </div>
+        <div class="header__nav">
+          <nav>
+            <a href="./cars.html">Выбор машины</a>
+          </nav>
+          <div class="header__sign">
+            <a href="./signIn.html">Вход</a>
+            <a href="./signUp.html">Регистрация</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="signIn">
+        <div class="container">
+          <form action="post" class="signIn__form sign-form" onsubmit="">
+            <div class="signIn__email label">
+              <label for="user-email">Почта</label>
+              <input
+                class="sign-input"
+                required
+                type="email"
+                placeholder="Введите вашу почту"
+                name="user-email"
+                id="user-email"
+              />
+            </div>
+            <div class="signIn__pass label">
+              <label for="user-pass">Пароль</label>
+              <input
+                class="sign-input"
+                required
+                type="password"
+                placeholder="Введите ваш пароль"
+                name="user-pass"
+                id="user-pass"
+              />
+            </div>
+            <div class="signIn__remember">
+              <label class="custom-checkbox">
+                Запомнить
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <button class="form-button" type="submit">Войти</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container row">
+        <p>&#169; Все права защищены. 2023</p>
+        <p>
+          Разработал
+          <a
+            href="https://github.com/Dunissimo"
+            target="_blank"
+            rel="no-referrer"
+            >Dunissimo</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

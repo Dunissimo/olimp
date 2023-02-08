@@ -1,0 +1,11 @@
+.signIn {
+  padding: 2rem 0;
+  min-height: 68vh;
+}
+
+.signIn__remember {
+  margin-bottom: 1rem;
+}
+.signIn__remember label {
+  user-select: none;
+}
